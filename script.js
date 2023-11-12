@@ -6,15 +6,17 @@ function createGrid(size) {
     for (let i=1; i<=size*size; i++){
         const square = document.createElement("div");
         square.classList.add("gridSquare");
-        //square.style.backgroundColor("white");
         square.addEventListener("mouseover", changeColour);
         grid.appendChild(square);
     }
 }
 
 function changeColour(e) {
+    let redValue = Math.floor(Math.random()*256);
+    let greenValue = Math.floor(Math.random()*256);
+    let blueValue = Math.floor(Math.random()*256);
     if (e.type==="mouseover"){
-        e.target.style.backgroundColor = "grey";
+        e.target.style.backgroundColor = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
     }
 }
 window.onload = () => {
