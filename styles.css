@@ -20,10 +20,10 @@ body {
     background-color: white;
     padding:0;
     margin:0;
+    box-shadow: 2px 2px 2px 2px rgb(73, 68, 68);
     width: 600px;
     height: 600px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+
 }
 .gridSquare{
     margin:0;
@@ -31,5 +31,13 @@ body {
 }
 
 h1{
-    color:pink;
+    color: rgb(82, 58, 58);
+    margin-bottom: 50px;
+}
+
+#size-button{
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding:10px;
+
 }
